@@ -29,7 +29,10 @@ public class Main {
         //[✅]
         //int[] result = sum( new int[]{1, 3, 7, 9, 2}, 25);
         //[✅]
-        //int[] result = sum( new int[]{}, 1);
+        // int[] result = sum( new int[]{}, 1);
+
+        optimalSum( new int[]{1, 3, 7, 9, 2}, 11);
+
 
     }
 
@@ -49,6 +52,24 @@ public class Main {
         for(int i = 0; i < length; i++){
             for(int j = i+1; j<length; j++){
                 if(arr[i]+arr[j]==target)
+                    return new int[]{i,j};
+            }
+        }
+
+        return null;
+    }
+
+
+    public static int[] optimalSum(int[] arr, int target){
+        if(arr.length <2) return  null;
+
+        int length = arr.length;
+        int localTarget  = 0;
+
+        for(int i = 0; i < length; i++){
+            localTarget = target - arr[i];
+            for(int j = i+1; j<length; j++){
+                if(arr[j]==localTarget)
                     return new int[]{i,j};
             }
         }
