@@ -1,6 +1,7 @@
 package com.coding;
 
 import java.lang.reflect.Array;
+import java.util.HashMap;
 
 public class Main {
     /*
@@ -18,7 +19,11 @@ public class Main {
     *                         [5]                    t = 5          null
     *                         [1, 6]                 t = 7         [0, 1]"
     *   -
-    *   [ ] Step 3: Figure out solution without code.
+    *   [✅] Step 3: Figure out solution without code.
+    *   -
+    *   [✅] Step 4: Get the time and space complexity:
+    *                         Time:     O(n^2)
+    *                         Space:    O(1)
     *
      */
     public static void main(String[] args) {
@@ -72,6 +77,23 @@ public class Main {
                 if(arr[j]==localTarget)
                     return new int[]{i,j};
             }
+        }
+        return null;
+    }
+
+    //   For example:  [1, 3, 7, 9 , 2]       t = 11        [3, 4]
+
+    public static int[] bestSolution(int[] arr, int target){
+        if(arr.length <2) return  null;
+
+        HashMap<Integer, Integer> index = new HashMap<Integer, Integer>();
+        int length = arr.length;
+
+        for(int i = 0; i<length; i++){
+            if(index.containsKey(arr[i])){
+                return new int[]{index.get(arr[i]),i};
+            }
+            index.put(target-arr[i],i);
         }
 
         return null;

@@ -32,4 +32,14 @@ class MainTest {
     void firstWrongOptimalSolution(){
         assertArrayEquals(null, Main.optimalSum(array, 25));
     }
+
+    @Test
+    void firstCorrectBestSolution(){
+        assertArrayEquals(new int[]{3, 4}, Main.bestSolution(array, 11));
+    }
+
+    @Test
+    void firstWrongBestSolution(){
+        assertArrayEquals(null, Main.bestSolution(array, 25));
+    }
 }
