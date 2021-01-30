@@ -36,4 +36,22 @@ class BoxTest {
         array = new int[]{2};
         assertEquals(0, Box.firstSolution(array));
     }
+
+    @Test
+    void firstCorrectOptimalSolution(){
+        assertEquals(28, Box.optimalSolution(array));
+    }
+    @Test
+    void secondCorrectOptimalSolution(){
+        array = new int[]{6, 9, 3, 4, 5, 8};
+        assertEquals(32, Box.optimalSolution(array));
+    }
+
+    @Test
+    void firstWrongOptimalSolution(){
+        array = new int[]{};
+        assertEquals(0, Box.optimalSolution(array));
+    }
+    
+
 }
