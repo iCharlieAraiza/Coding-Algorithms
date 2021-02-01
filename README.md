@@ -6,3 +6,4 @@ Coding interview questions in Java (using Junit 5)
 
 - [ ] Add the index
 - [ ] Do the file structure
+- [ ] Build the "only source code" apex
