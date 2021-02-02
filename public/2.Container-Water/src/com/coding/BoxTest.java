@@ -52,6 +52,6 @@ class BoxTest {
         array = new int[]{};
         assertEquals(0, Box.optimalSolution(array));
     }
-    
+
 
 }
