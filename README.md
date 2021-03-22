@@ -10,3 +10,4 @@ Coding interview questions in Java (using Junit 5)
 - [ ] Do the file structure
 - [ ] Build the "only source code" apex
 - [ ] Substrings
+- [ ] Multilingue
