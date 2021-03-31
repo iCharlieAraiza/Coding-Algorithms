@@ -12,3 +12,4 @@ Coding interview questions in Java (using Junit 5)
 - [ ] Substrings
 - [ ] Multilingue
 - [ ] Description
+- [ ] Build curriculum
