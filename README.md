@@ -13,3 +13,4 @@ Coding interview questions in Java (using Junit 5)
 - [ ] Multilingue
 - [ ] Description
 - [ ] Build curriculum
+- [ ] Add instructions for solving
