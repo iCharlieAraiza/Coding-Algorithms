@@ -1,7 +1,6 @@
 package com.coding.test;
 
-import com.coding.module1.CountChar;
-import org.junit.jupiter.api.BeforeEach;
+import com.coding.module1.datastructures.CountChar;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;

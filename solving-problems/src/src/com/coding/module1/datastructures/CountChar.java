@@ -1,6 +1,13 @@
-package com.coding.module1;
+package com.coding.module1.datastructures;
 
 import java.util.HashMap;
+
+/**
+ *  Count each characters
+ */
+
+
+
 
 public class CountChar {
 
