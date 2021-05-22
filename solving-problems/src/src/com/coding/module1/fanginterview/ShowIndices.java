@@ -1,6 +1,7 @@
 package com.coding.module1.fanginterview;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  *  Given an array of integers, return the indices add the two numbers
@@ -41,11 +42,14 @@ public class ShowIndices {
         this.numbers = numbers;
     }
 
+
+
+    // O(n^2)
+
     public ArrayList<Integer> calculateFirst(int target){
         if(numbers.length<2){
             return null;
         }
-
         //1. Check all elements of the array using a mobile pointer
 
         int count = 0;
@@ -64,4 +68,53 @@ public class ShowIndices {
         }
         return null;
     }
+
+
+    // O(n)
+
+    public ArrayList<Integer> calculateSecond(int target){
+        //
+        int result;
+        HashMap<Integer,Integer> map = new HashMap<>();
+        ArrayList<Integer> indexes = new ArrayList<>();
+
+        for(int i = 0; i<numbers.length; i++){
+            result = numbers[i]-target;
+            result = result<0 ? result*-1 : result;
+
+            map.put(numbers[i],i);
+
+            if(map.containsKey(result) && result!=numbers[i]){
+                indexes.add(i);
+                indexes.add(map.get(result));
+                return indexes;
+            }
+        }
+
+        return null;
+    }
+
+
+    public int[] calculateLeetcode(int target, int[] numbers){
+        //
+        int result;
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int[] indexes = new int[2];
+
+        for(int i = 0; i<numbers.length; i++){
+            result = target-numbers[i];
+
+            if(map.containsKey(result)){
+                indexes[1] = i;
+                indexes[0] = map.get(result);
+                return indexes;
+            }
+
+            map.put(numbers[i],i);
+        }
+
+        return null;
+    }
+
+
 }
