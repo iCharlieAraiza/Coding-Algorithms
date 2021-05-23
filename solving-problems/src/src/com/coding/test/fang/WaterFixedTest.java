@@ -35,8 +35,8 @@ class WaterFixedTest {
 
     @Test
     void leetCodeBruteForce(){
-        int maxTest = waterFixed.calculateLeetCode(new int[]{2,3,4,5,18,17,6});
-        assertEquals(17, maxTest);
+        int maxTest = waterFixed.calculateLeetCode(new int[]{2,1});
+        assertEquals(1, maxTest);
     }
 
 
