@@ -44,7 +44,6 @@ public class WaterContainer {
                 area = Math.max(length * min, area);
             }
         }
-
         return area;
     }
 }

@@ -24,23 +24,20 @@ public class WaterFixed {
     }
 
     public int calculateLeetCode(int[] container){
-        //declare two pointers
-        //While p1<p2;
-        int max = 0;
-        int p1 = 0, p2 = container.length-1;
+        int i = 0,
+            j = container.length-1,
+            max = 0;
 
-        while(p1<p2){
-            int num1 = container[p1];
-            int num2 = container[p2];
-            int min = Math.min(num1,num2);
-            int length = p2-p1;
+        while(i<j){
+            int length = j-i;
+            int min = Math.min(container[i], container[j]);
 
-            int area =  min*length;
-            if(area>max){
-                max = area;
-                p1++;
+            max = Math.max(min * length, max);
+
+            if( container[i] < container[j] ){
+                i++;
             }else{
-                p2--;
+                j--;
             }
         }
         return max;
