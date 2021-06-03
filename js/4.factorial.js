@@ -10,14 +10,26 @@ function getOddNumbers(arr){
     const odd = [];
 
     function getOdd(list){
-        if(list.length === 1){
+        if(list.length === 0){
             return;
         }
 
         if( list[0]%2!=0 ){
             odd.push( list[0] );
         }
-        getOdd( list.slice(1) );
+        
+        const aux = [];
+        let flag = true;
+        list.forEach(num=>{
+            if(flag){
+                flag = false;
+            }else{
+                aux.push(num);   
+            } 
+        })
+
+        getOdd( aux );
+
     }
 
     getOdd(arr);
