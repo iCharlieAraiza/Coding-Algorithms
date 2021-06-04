@@ -50,7 +50,7 @@ const optimalSubstring = (string)=>{
 //Loop the array
     for(right = 0; right<string.length; right++ ){
         let char = string[right];
-        console.log(char, `rigth: ${right} left: ${left} max: ${max}`);
+        console.log(char, `rigth: ${right} left: ${left} max: ${max} seenChar[char]: ${seenChar[char]}`);
 
         if(seenChar[char]>=left){
             left = seenChar[char]+1;
