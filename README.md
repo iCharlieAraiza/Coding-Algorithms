@@ -15,3 +15,4 @@ Algorthms and coding interview questions in Java (using Junit 5)
 - [ ] Build curriculum
 - [ ] Add instructions for solving
 - [ ] Add concurrent programming 
+- [ ] Functional programming
