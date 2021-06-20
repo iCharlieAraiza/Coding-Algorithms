@@ -12,9 +12,8 @@ const toUpperFirst = (string) => {
         
         return capitalize(newString, string, index+1);
     }
-
     return capitalize("", string, 0);
 }
 
 
-console.log( toUpperFirst("Holaaaaaa mm m m mundo") );
+console.log( toUpperFirst("Son una serie de reglas que están compuestas por conceptos generales y normas particulares, que regulan la elaboración y presentación de la información contenida en los estados financieros") );
