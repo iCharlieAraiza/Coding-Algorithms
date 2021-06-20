@@ -16,24 +16,7 @@ public class Main {
                 new Student("Andrea", "Juarez", 18, FEMALE),
                 new Student("Emma", "Johnson", 17, FEMALE)
         );
-
-        //Imprimir de forma imperacticta por sexo
-        /*
-        System.out.println("Lista de alumnas: ");
-        for(Student student : studentList){
-            if( FEMALE.equals( student.getGender() )){
-                System.out.println(student.toString());
-            }
-        }
-
-        System.out.println("\n\bLista de alumnos");
-        for (Student student : studentList){
-            if( MALE.equals(student.getGender()) ){
-                System.out.println( student.toString() );
-            }
-        }
-        */
-
+        
         //Imprimir de forma funcional
         System.out.println("Lista de alumnos");
         studentList.stream()
