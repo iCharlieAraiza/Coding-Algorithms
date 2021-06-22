@@ -16,7 +16,7 @@ public class Main {
                 new Student("Andrea", "Juarez", 18, FEMALE),
                 new Student("Emma", "Johnson", 17, FEMALE)
         );
-        
+
         //Imprimir de forma funcional
         System.out.println("Lista de alumnos");
         studentList.stream()
@@ -30,7 +30,7 @@ public class Main {
                 .filter(student -> FEMALE.equals(student.getGender()))
                 .collect(Collectors.toList());
 
-        femaleStudents.forEach(student -> System.out.println(student.toString()));
+        //femaleStudents.forEach(student -> System.out.println(student.toString()));
 
         /*
         * Mapear en persona
@@ -42,8 +42,33 @@ public class Main {
                 .map( student -> new Person(student.getFirstName(), 2021-student.getAge()))
                 .toList();
 
-        personList.forEach(System.out::println);
+        //personList.forEach(System.out::println);
 
+        //spaceRepetition();
+
+        List<Student> femaleStudent = getFemaleStudentList( studentList );
+
+        femaleStudent.forEach( student -> System.out.println( student.getFirstName() ));
+
+    }
+
+    public static void spaceRepetition(){
+        List<Student> studentList = List.of(
+                new Student("Juanito", "Perez", 20, MALE),
+                new Student("Carlitos", "Gonazarez", 20, MALE),
+                new Student("Marianita", "Perez", 20, FEMALE)
+        );
+
+        studentList.stream()
+                .filter( student -> FEMALE.equals( student.getGender() ) )
+                .collect( Collectors.toList() )
+                .forEach( student -> System.out.println(student.toString()) );
+    }
+
+    public static List<Student> getFemaleStudentList(List<Student> students){
+        return students.stream()
+                .filter( student -> FEMALE.equals(student.getGender()) )
+                .toList();
     }
 
 }
