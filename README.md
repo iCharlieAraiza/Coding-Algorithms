@@ -1,10 +1,16 @@
-# Coding-Algorithms (in progress)
+# Coding-Algorithms 
 
 Algorthms and coding interview questions in Java (using Junit 5)
 
+## License
+
 ![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
-# To-do
+## Project status
+
+In progress
+
+### To-do
 
 - [ ] Add the index
 - [ ] Do the file structure
@@ -16,3 +22,4 @@ Algorthms and coding interview questions in Java (using Junit 5)
 - [ ] Add instructions for solving
 - [ ] Add concurrent programming 
 - [ ] Functional programming
+
