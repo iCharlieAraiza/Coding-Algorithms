@@ -29,4 +29,9 @@ class _FunctionTest {
         Function<Integer, Integer> addOneAndThenMultiplyByTen = test.incrementByOne.andThen( test.multiplyByTen );
         assertEquals(20, addOneAndThenMultiplyByTen.apply(1) );
     }
+
+    @Test
+    void addOneAndMultiplyBy(){
+        assertEquals(15, test.addOneAndMultiplyBy.apply(4, 3) );
+    }
 }
