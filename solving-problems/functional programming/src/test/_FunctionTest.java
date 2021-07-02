@@ -1,5 +1,7 @@
-package org.course;
+package test;
 
+
+import org.course._Function;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

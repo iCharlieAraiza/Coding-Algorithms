@@ -5,11 +5,11 @@ import java.util.function.Function;
 
 public class _Function {
 
-    Function<Integer, Integer> incrementByOne = number -> number + 1;
+    public Function<Integer, Integer> incrementByOne = number -> number + 1;
 
-    Function<Integer, Integer> multiplyByTen = number -> number * 10;
+    public Function<Integer, Integer> multiplyByTen = number -> number * 10;
 
-    BiFunction<Integer, Integer, Integer> addOneAndMultiplyBy =
+    public BiFunction<Integer, Integer, Integer> addOneAndMultiplyBy =
             ( baseNumber, multiplyByThisNumber ) -> (baseNumber + 1) * multiplyByThisNumber;
 
 }
