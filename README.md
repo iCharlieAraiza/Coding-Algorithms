@@ -24,4 +24,4 @@ In progress
 - [ ] Add instructions for solving
 - [ ] Add concurrent programming 
 - [ ] Functional programming
-
+- [ ] How to write a CV
