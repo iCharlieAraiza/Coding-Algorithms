@@ -24,4 +24,5 @@ In progress
 - [ ] Add instructions for solving
 - [ ] Add concurrent programming 
 - [ ] Functional programming
-- [ ] How to write a CV
+- [ ] How to write a CV
+- [ ] Projects to get a job as a Java Progammer
