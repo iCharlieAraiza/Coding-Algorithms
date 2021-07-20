@@ -26,3 +26,4 @@ In progress
 - [ ] Functional programming
 - [ ] How to write a CV
 - [ ] Projects to get a job as a Java Progammer
+- [ ] Review Code
