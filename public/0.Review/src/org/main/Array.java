@@ -1,6 +1,9 @@
 package org.main;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 public class Array {
 
@@ -17,7 +20,7 @@ public class Array {
         return null;
     }
 
-    int[] getSumOfIndexOptimal(int[] nums, int target){
+    public int[] getSumOfIndexOptimal(int[] nums, int target){
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i = 0; i < nums.length; i++){
             int num = nums[i];
@@ -29,5 +32,50 @@ public class Array {
             }
         }
         return null;
+    }
+
+    public Character firstRepeatedChar(ArrayList<Character> list){
+        ArrayList<Character> chars = new ArrayList<>();
+        for(char aux : list){
+            if(chars.contains(aux)){
+                return aux;
+            }else {
+                chars.add(aux);
+            }
+        }
+
+        return null;
+    }
+
+    public Character firstRepeatedCharSingle(ArrayList<Character> list){
+        //Recorrer el arreglo
+        //Recottrt arreglo inicializado j = i + 1
+            //Si val[i] === val [j], regresar el valor
+
+        for(int i = 0; i < list.size(); i++){
+            for (int j = i+1; j < list.size(); j++){
+               if( list.get(i).equals( list.get(j)) ){
+                   return list.get(i);
+               }
+            }
+        }
+
+        return null;
+    }
+
+
+    public List<Integer> mergeTwoSortedList(List<Integer> a, List<Integer> b){
+        List<Integer> result = new ArrayList<>();
+
+        a.forEach(el ->{
+            result.add(el);
+        });
+
+        b.forEach(el->{
+            result.add(el);
+        });
+
+        Collections.sort(result);
+        return result;
     }
 }
