@@ -11,6 +11,7 @@ Algorthms and coding interview questions in Java (using Junit 5)
 
 In progress
 
+- [ ] Add common actions in java
 
 ### To-do
 
