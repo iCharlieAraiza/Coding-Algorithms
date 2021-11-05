@@ -11,19 +11,21 @@ public class BinarySearch {
         System.out.println( getIndex(list, target) );
     }
     
-    public static int getIndex(int[] list, int target){
-        int p = 0,
-            q = list.length, 
-            midPoint;
-        do{
-            midPoint = (int) Math.floor((p + q) / 2);
-            //System.out.println(p + " " + +midPoint+ " " + q);
-            if( list[midPoint] == target) return midPoint;
-            else{
-                if( list[midPoint] < target ) p = midPoint+1;
-                else q = midPoint-1;
+    public static int getIndex(int[] num, int target) {
+    int start = 0;
+    int end = nums.length-1;
+
+        while(start <= end){
+            int mid = start +(end -start )/2;
+            if(nums[mid] == target){
+                return mid;
             }
-        }while(p < q);
-        return -1;
+
+            if(nums[mid] < target){
+                start = mid +1;
+            }else{
+                end = mid - 1;
+            }
+        } return -1;
     }
 }
