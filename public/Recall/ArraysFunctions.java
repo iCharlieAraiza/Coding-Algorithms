@@ -18,6 +18,8 @@ public class ArraysFunction {
         //Declare a 2D array
         int[][]c = new int[2][2];
         
+        int[][] matrix = {{1,2,3},{4,5,6}};
+        
         for(int i = 0; i < 2; i++){
             for(int j = 0; j<2; j++){
                 c[i][j] = i + j; 
