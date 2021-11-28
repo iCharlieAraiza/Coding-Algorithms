@@ -28,3 +28,6 @@ In progress
 - [ ] How to write a CV
 - [ ] Projects to get a job as a Java Progammer
 - [ ] Review Code
+
+
+- [ ] Add topics from Jet Brains Academy
